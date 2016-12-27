@@ -50,9 +50,9 @@ Launch your Holodeck (Live) installation of Star Trek Online, and log in to your
 
 Now launch your Windows Command Prompt with Administrator permissions. This is very important, as we'll be hooking the STO process, and this cannot be done without admin permissions.
 
-In the command prompt, navigate to <your target environment>\Tools\Gibbed, and run `Gibbed.Cryptic.ExportSchemas.exe`. This will take a couple minutes, and when it's done, you can close your game.
+In the command prompt, navigate to &lt;your target environment&gt;\Tools\Gibbed, and run `Gibbed.Cryptic.ExportSchemas.exe`. This will take a couple minutes, and when it's done, you can close your game.
 
-Now comes a tricky part. You will need to make certain modifications to the XML files before you proceed. In the file explorer, go to <your target environment>\Tools\Gibbed\schemas\Star Trek Online\Live\schemas.
+Now comes a tricky part. You will need to make certain modifications to the XML files before you proceed. In the file explorer, go to &lt;your target environment&gt;\Tools\Gibbed\schemas\Star Trek Online\Live\schemas.
 
 When in there, you will want to locate the following files:
 
@@ -78,13 +78,13 @@ This is only necessary with large game updates, and once they happen, you can ju
 
 For this step, you need to locate your Star Trek Online.
 
-Switch back to Command Prompt. Run `Gibbed.Cryptic.Unpack.exe -v "<path to STO>\Star Trek Online\Playtest\piggs\bins.hogg" "<your target environment>\Hoggs"`. Now this process will take a long time. I recommend you take a break and drink a tea or a coffee.
+Switch back to Command Prompt. Run `Gibbed.Cryptic.Unpack.exe -v "&lt;path to STO&gt;\Star Trek Online\Playtest\piggs\bins.hogg" "&lt;your target environment&gt;\Hoggs"`. Now this process will take a long time. I recommend you take a break and drink a tea or a coffee.
 
 ##Step 4: Extracting the game resources
 
-This set will briefly explain unpacking .bin files to XML.
+This set will briefly explain unpacking .BIN files to XML.
 
-In the Command Prompt, run `Gibbed.Cryptic.ConvertResource.exe -x "<your target environment>\Hoggs\bin\ClientMessagesEnglish.bin" "<your target environment>\Data\ClientMessages". Note that if the target directory exists, you will need to delete it.
+In the Command Prompt, run `Gibbed.Cryptic.ConvertResource.exe -x "&lt;your target environment&gt;\Hoggs\bin\ClientMessagesEnglish.bin" "&lt;your target environment&gt;\Data\ClientMessages". Note that if the target directory exists, you will need to delete it.
 
 On the first run, the tool will error out saying `Don't know how to handle 'ClientMessagesEnglish'  with a hash of 'somenumber'`. You need to note down this number, and then switch back to your text editor.
 
@@ -94,7 +94,7 @@ Note that editing the .json file is not necessary with each update, just with th
 
 ##Step 5: ???
 
-You have now successfully extracted a game archive, and a game resource. If you go to "<your target environment>\Data\ClientMessages" and open entries.xml, you will find all the clientside language strings STO uses.
+You have now successfully extracted a game archive, and a game resource. If you go to "&lt;your target environment&gt;\Data\ClientMessages" and open entries.xml, you will find all the clientside language strings STO uses.
 
 Generally, you want to copy this file somewhere else, and then, when an update happens, repeat the unpacking process for your game, and compare the contents with your copy of the contents.xml.
 
