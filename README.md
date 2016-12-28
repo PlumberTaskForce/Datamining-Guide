@@ -78,13 +78,13 @@ This is only necessary with large game updates, and once they happen, you can ju
 
 For this step, you need to locate your Star Trek Online.
 
-Switch back to Command Prompt. Run `Gibbed.Cryptic.Unpack.exe -v "&lt;path to STO&gt;\Star Trek Online\Playtest\piggs\bins.hogg" "&lt;your target environment&gt;\Hoggs"`. Now this process will take a long time. I recommend you take a break and drink a tea or a coffee.
+Switch back to Command Prompt. Run `Gibbed.Cryptic.Unpack.exe -v "<path to STO>\Star Trek Online\Playtest\piggs\bins.hogg" "<your target environment>\Hoggs"`. Now this process will take a long time. I recommend you take a break and drink a tea or a coffee.
 
 ##Step 4: Extracting the game resources
 
 This set will briefly explain unpacking .BIN files to XML.
 
-In the Command Prompt, run `Gibbed.Cryptic.ConvertResource.exe -x "&lt;your target environment&gt;\Hoggs\bin\ClientMessagesEnglish.bin" "&lt;your target environment&gt;\Data\ClientMessages". Note that if the target directory exists, you will need to delete it.
+In the Command Prompt, run `Gibbed.Cryptic.ConvertResource.exe -x "<your target environment>\Hoggs\bin\ClientMessagesEnglish.bin" "<your target environment>\Data\ClientMessages"`. Note that if the target directory exists, you will need to delete it.
 
 On the first run, the tool will error out saying `Don't know how to handle 'ClientMessagesEnglish'  with a hash of 'somenumber'`. You need to note down this number, and then switch back to your text editor.
 
