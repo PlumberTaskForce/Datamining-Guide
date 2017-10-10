@@ -1,4 +1,8 @@
 Datamining Guide
 Copyright 2017 John Cena Collective
 
-Contents of this guide are made available under the terms of the Apache License 2.0. You may freely modify, remix, adapt, redistribute, or even resell the contents, so long as you (1) retain this license notice and disclaimer, (2) retain author information for this document, and (3) include the LICENSE.txt and NOTICE.txt files attached to this guide.
+Contents of this guide are made available under the terms of the Apache License 
+2.0. You may freely modify, remix, adapt, redistribute, or even resell the 
+contents, so long as you (1) retain this license notice and disclaimer, (2) 
+retain author information for this document, and (3) include the LICENSE.txt 
+and NOTICE.txt files attached to this guide.
